@@ -1,0 +1,28 @@
+<h5>Input Basicos </h5>
+<div>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Nombre" (keyup)="keyUp($event)" (blur)="onBlur($event)">
+  </mat-form-field>
+</div>
+
+<h5>Prefijos y Sufrijos</h5>
+<div>
+  <mat-form-field>
+    <span matPrefix> +449&nbsp;</span>
+    <input matInput type="text" placeholder="Telefono">
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field>
+    <input matInput type="Correo" placeholder="Correo">
+    <span matSuffix> @gmail.com</span>
+  </mat-form-field>
+</div>
+
+<h5>Pistas</h5>
+<div>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Direccion">
+    <mat-hint>Calle / Fraccionamiento</mat-hint>
+  </mat-form-field>
+</div>

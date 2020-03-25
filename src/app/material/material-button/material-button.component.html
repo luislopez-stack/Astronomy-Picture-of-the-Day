@@ -1,0 +1,26 @@
+<h3>Subtitulo Aquí</h3>
+<button mat-button>Click Aquí!</button>
+<button mat-button color="primary">Boton primario</button>
+
+<h3>Boton con elevacion</h3>
+<div>
+  <button mat-raised-button [disabled] = "boton.valido">Click Aquí!</button>
+  <button mat-raised-button color="primary">Boton primario</button>
+</div>
+
+<h3>Boton con iconos</h3>
+<div>
+  <button mat-icon-button (click)="onClick($event)">
+    <mat-icon>menu</mat-icon>
+  </button>
+    <button mat-icon-button mat-raised-button color="primary"><mat-icon>menu</mat-icon></button>
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+</div>
+
+<h3>Boton de accion flotantes</h3>
+<div>
+  <button mat-fab><mat-icon>grade</mat-icon></button>
+  <button mat-fab color="primary"><mat-icon>add</mat-icon></button>
+</div>
