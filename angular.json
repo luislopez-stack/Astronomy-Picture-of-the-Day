@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.sass"
             ],
             "scripts": []
@@ -94,7 +94,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.sass"
             ],
             "scripts": []
@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "AngularProyecto1"
+  "defaultProject": "AngularProyecto1",
+  "cli": {
+    "analytics": "8bacc88e-5be9-4953-8eff-9ac95eba9375"
+  }
 }
