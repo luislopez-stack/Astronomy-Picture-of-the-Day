@@ -1,0 +1,30 @@
+<div class="container" *ngFor="let marsImg of marsImage">
+    <mat-card class="content">
+      <h3 class='card'>Astronomy Picture of Mars</h3>
+      <mat-card-header>
+        <img mat-card-avatar src="https://pwco.com.sg/wp-content/uploads/Generic-Profile-Placeholder-v3.png">
+        <mat-card-title>{{marsImg.rover.name}}</mat-card-title>
+        <mat-card-subtitle>{{marsImg.earth_date | date:'fullDate'}}</mat-card-subtitle>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <img class="image" mat-card-image src={{marsImg.img_src}}>
+        <p>{{marsImg.rover.name}}, {{marsImg.id}}</p>
+      </mat-card-content>
+  
+      <mat-card-actions>
+        <button mat-button >Like</button>
+        <button mat-button >Share</button>
+        <button mat-button >Love</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
+  
+  
+  <!--<div *ngIf="error">
+    <mat-card>{{error}}</mat-card>
+  </div>-->
+  <div *ngIf="!marsImage">
+    <mat-card>No Data</mat-card>
+  </div>
